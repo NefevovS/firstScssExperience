@@ -1,0 +1,26 @@
+.cart-footer {
+  background: #eaeff2;
+  padding: 19px 0;
+  display: grid;
+  grid-template-columns: 5fr 3fr 4fr;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  column-gap: 30px;
+  @media (max-width: $mobile) {
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @media (max-width: $mobile-xs) {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+}
+.cart-footer__count {
+  grid-column-start: 2;
+  @media (max-width: $mobile) {
+    grid-column-start: 1;
+  }
+}
